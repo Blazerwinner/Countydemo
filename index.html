@@ -1,12 +1,20 @@
-get_state_options
-    List listOfStates is initialized to an empty list
-    #First step is to create a list of all states
-    for each county in counties
-        if the county's state is not in listOfStates
-            add the county's state to listOfStates
-     #Second step is to create a string containing HTML
-     #code for the options in the select element
-     String options is initialized to empty String
-     for each state in listOfStates:
-         options = options + (code to make an HTML option element for the state)
-     return options
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1">
+        
+        
+        <link rel= "stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <link rel= "stylesheet" type= "text/css" href= "style.css">
+        <title>Cool Fact</title>
+    </head>
+    <body>
+        <form action= "/">
+            <select name= "states">
+                {{ states }}
+            </select>
+            <br><br>
+            <input type= "submit">
+        </form>
