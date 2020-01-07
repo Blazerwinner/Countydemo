@@ -2,7 +2,7 @@ from flask import Flask, request, Markup, render_template, flash, Markup
 import os
 import json
 
-_name_ = '_main_'
+
 
 app = Flask(_name_)
 
