@@ -4,7 +4,7 @@ import json
 
 
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 @app.route("/")
 def render_main():
@@ -32,5 +32,5 @@ def fun_fact(state, counties):
                                 highestTravelTime[1] = data['Miscellaneous'] ['Building Permits']
                                 highestTravelTime[0] = data['County']
         return highestTravelTime
-if _name_=="_main_":
+if __name__=="__main__":
    app.run(debug=False)
